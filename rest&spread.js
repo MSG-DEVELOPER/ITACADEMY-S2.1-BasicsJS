@@ -48,6 +48,21 @@ console.log("desde nivel 2 ej 3 , te aviso que sigo cobrando " + objecte1.salari
 
 }
 
+{
+//nivell 2
+//ex 4
+//Rest en Destructuring: Crea una array amb diversos elements. Utilitza destructuring i 
+//l'operador rest per a assignar els primers dos elements a variables, i després assignar la resta dels elements 
+// a una tercera variable
+
+const arrayNum=[1,2,3,4,5,6,7,8,9,10];
+
+let [primero,segundo,...losOtros]=arrayNum;
+console.log("desde el nivel 2 ej 4 te presento el primer elemento " + primero + " el segundo " + segundo + " y los que faltan " + losOtros);
+
+
+
+}
 
 
 
@@ -84,7 +99,6 @@ console.log("te presento la suma de los objetos desde el nivel 3 ej 6: " , obj3)
 
 
 }
-
 
 
 
