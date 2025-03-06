@@ -55,4 +55,22 @@ console.log("desde el nivel 2 ej 5 ...te digo ... " + res);
 }
 
 
+{
+//nivel 3 
+// ej 6
+//Every / Some: Usa every i some per a determinar si tots o alguns dels elements de l'array [11, 12, 13, 14]
+//  són majors que 10, respectivament
+
+const arrayNum =  [11, 12, 13, 14];
+
+const todos = arrayNum.every(n => n > 10);
+console.log("desde el nivel 3 ej 6 te digo...todos los num son > 10?? " + todos);
+
+const algun= arrayNum.some(n=>n>10);
+console.log("desde el nivel 3 ej 6 te digo...algun num es > 10?? " + algun);
+
+
+}
+
+
 
