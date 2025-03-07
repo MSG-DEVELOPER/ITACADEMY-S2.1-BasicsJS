@@ -1,5 +1,4 @@
-const titulo = document.getElementById("pestana");
-titulo.textContent = "Arrow functions";
+
 
 //NIVEL 1
 //ej 1
@@ -36,7 +35,7 @@ titulo.textContent = "Arrow functions";
   printNumbers(arrayNumbers);
 
   function printNumbers(array) {
-    console.log("Desde el nivel 1 ej 4: ")
+    console.log("Desde el nivel 2 ej 4: ")
     for (let i = 0; i < array.length; i++) {
       const muestra = (index) => console.log(array[index]);
       muestra(i)
@@ -48,7 +47,7 @@ titulo.textContent = "Arrow functions";
 //ej 5
 
 {
-let mesage="desde el nivel 1 ej 5 te doy las gracias por corregirme";
+let mesage="desde el nivel 3 ej 5 te doy las gracias por corregirme";
 
 setTimeout(()=>console.log(mesage),3000);
 
