@@ -1,33 +1,140 @@
-Nivell 1
+function obtenerMensaje(exito) {
+    return new Promise((resolve, reject) => {
+        if (exito) {
+            resolve("🎉 ¡Mensaje exitoso!");
+        } else {
+            reject("❌ Ocurrió un error...");
+        }
+    });
+}
+
+async function mostrarMensaje() {
+    try {
+        console.log("Intentando obtener el mensaje...");
+        let mensaje = await obtenerMensaje(true); // Cambia a false para probar el error
+        console.log(mensaje);
+    } catch (error) {
+        console.log(error);
+    }
+    console.log("Proceso finalizado");
+}
+
+// Llamamos a la función
+mostrarMensaje();
 
 
 
 
-Exercici 1
-Operador ternari bàsic: Escriu una funció potConduir que accepti l'edat com a paràmetre i utilitzi l'operador ternari 
-per determinar si l'usuari pot conduir. Si l'edat és 18 o més, ha de retornar 'Pots conduir'. 
-Si no, ha de retornar 'No pots conduir'.
-
-Exercici 2
-Ús amb operadors de comparació: Escriu una expressió que utilitzi l'operador ternari per determinar 
-quin dels dos nombres donats (num1 i num2) és més gran. Si num1 és més gran, retorna 'num1 és més gran'.
- Si no, retorna 'num2 és més gran'.
-
-
-Nivell 2
 
 
 
+let promesa1 = new Promise(resolve => {
+    setTimeout(() => resolve("Promesa 1 resuelta"), 1000);
+  });
+  
+  let promesa2 = new Promise(resolve => {
+    setTimeout(() => resolve("Promesa 2 resuelta"), 2000);
+  });
+  
 
-Exercici 3
-Ús enllaçat d'operadors ternaris: Escriu una expressió que utilitzi enllaços d'operadors ternaris per determinar si 
-un número és positiu, negatiu o zero.
 
-Operador ternari amb funcions: Crea una funció trobarMaxim que accepti tres paràmetres (a, b, c) i 
-utilitzi l'operador ternari per determinar el valor màxim.
+  Promise.all([promesa1, promesa2])
+    .then(resultados => {
+      console.log(resultados); // ["Promesa 1 resuelta", "Promesa 2 resuelta"]
+    })
+    .catch(error => {
+      console.log(error);
+    });
+  
 
-Nivell 3
 
-Exercici 4
-Operador ternari dins un bucle: Escriu una funció parOImpar que accepti un array de números i utilitzi un bucle per a 
-recórrer l'array. Dins del bucle, utilitza l'operador ternari per a determinar si cada número és parell o imparell.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function obtenerMensaje(exito) {
+    new Promise((resolve, reject) => { // ❌ FALTA EL RETURN
+        if (exito) {
+            resolve("🎉 ¡Mensaje exitoso!");
+        } else {
+            reject("❌ Ocurrió un error...");
+        }
+    });
+}
+
+async function mostrarMensaje() {
+    try {
+        console.log("Intentando obtener el mensaje...");
+        let mensaje = await obtenerMensaje(true); // ⛔ PROBLEMA AQUÍ
+        console.log(mensaje);
+    } catch (error) {
+        console.log(error);
+    }
+    console.log("Proceso finalizado");
+}
+
+mostrarMensaje();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Funciones que devuelven promesas con async/await
+async function promesa1() {
+    return new Promise(resolve => {
+      setTimeout(() => resolve("Promesa 1 resuelta"), 1000);
+    });
+  }
+  
+  async function promesa2() {
+    return new Promise(resolve => {
+      setTimeout(() => resolve("Promesa 2 resuelta"), 2000);
+    });
+  }
+  
+  async function ejecutar() {
+    try {
+      let resultados = await Promise.all([promesa1(), promesa2()]);
+      console.log(resultados); // ["Promesa 1 resuelta", "Promesa 2 resuelta"]
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  
+  ejecutar();
+  
+
+
+
+
+
+
+
+
+
+
+
+
