@@ -22,6 +22,16 @@ console.log("desde el nivel1 ej2 te presento el nuevo array "+ arrayPar);
 //nivel 1 
 //ej 3
 //trata de find que creo que no lo he visto
+//Find: Teniu una array de números [1, 10 , 8, 11]. 
+// Utilitza la funció find per a trobar el primer número que és major a 10.
+
+let numeros =  [1, 10 , 8, 11];
+let primerMayorQue10 = numeros.find(n=>n>10);
+console.log("desde el nievel 1 ej 3 se me habia olvidado este: " + primerMayorQue10);
+
+
+
+
 }
 
 
