@@ -1,11 +1,19 @@
-{
+ejecutar_f1();
+ejecutar_f2();
+ejecutar_f3();
+ejecutar_f4();
+ejecutar_f5();
+ejecutar_f6();
+
+
+function ejecutar_f1(){
   const array1 = ["IT"];
   const array2 = ["ACADEMY"];
   const array3 = [...array1, ...array2];
   console.log("desde el nivel 1 ej 1 , te digo...." + array3);
 }
 
-{
+function ejecutar_f2(){
   let res = suma(1, 2, 3, 4);
   console.log("desde el nivel1 resultado:" + res);
 
@@ -19,7 +27,7 @@
   }
 }
 
-{
+function ejecutar_f3(){
   let objecte1 = { cargo: "programador React", salario: 50000 };
   let objecte2 = { ...objecte1, salario: 45000 };
   console.log(
@@ -27,7 +35,7 @@
   );
 }
 
-{
+function ejecutar_f4(){
   const arrayNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   let [primero, segundo, ...losOtros] = arrayNum;
@@ -41,7 +49,7 @@
   );
 }
 
-{
+function ejecutar_f5(){
   function aceptaTres(a, b, c) {
     console.log(
       `desde el nivel 3 ej 5 , por aqui han pasado ${a} , ${b} y ${c} `
@@ -53,7 +61,7 @@
   aceptaTres(...arrayTres);
 }
 
-{
+function ejecutar_f6(){
   let obj1 = { nom: "ItAcademy", alumnos: 1200 };
   let obj2 = { dependencia: "bcn activa", especialidad: "IT" };
 

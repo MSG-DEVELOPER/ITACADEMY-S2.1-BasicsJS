@@ -1,4 +1,10 @@
-{
+ejecutar_f1();
+ejecutar_f2();
+ejecutar_f3();
+ejecutar_f4();
+
+
+function ejecutar_f1(){
   let mns = potConduir(18);
   console.log(mns);
 
@@ -9,7 +15,7 @@
   }
 }
 
-{
+function ejecutar_f2(){
   comparador(3, 4);
 
   function comparador(a, b) {
@@ -21,7 +27,7 @@
   }
 }
 
-{
+function ejecutar_f3(){
   let num = -2;
   let category;
 
@@ -50,7 +56,7 @@
 }
 
 
-{
+function ejecutar_f4(){
 const arrayNum= [1,2,3,4,5,7,14];
 parOImpar(arrayNum);
 

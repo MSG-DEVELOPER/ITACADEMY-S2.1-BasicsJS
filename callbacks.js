@@ -1,4 +1,11 @@
-{
+ejecutar_f1();
+ejecutar_f2();
+ejecutar_f3();
+ejecutar_f4();
+ejecutar_f5();
+
+
+function ejecutar_f1(){
   processar(255, print);
 
   function processar(num, callback) {
@@ -10,7 +17,7 @@
   }
 }
 
-{
+function ejecutar_f2(){
   let num1 = 10;
   let num2 = -2;
 
@@ -25,7 +32,7 @@
   }
 }
 
-{
+function ejecutar_f3(){
   esperarISaludar("marcos", saluda);
 
   function esperarISaludar(nom, callback) {
@@ -37,7 +44,7 @@
   }
 }
 
-{
+function ejecutar_f4(){
   const array = [1, 2, 3, 4, 56, 7, 8];
   processarElements(array, multiplica);
 
@@ -53,7 +60,7 @@
   }
 }
 
-{
+function ejecutar_f5(){
   let stringMinus = "hola caracola";
   processarCadena(stringMinus, muestra);
 
